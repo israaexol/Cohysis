@@ -1,0 +1,35 @@
+.main-about {
+    background-image: url('../../assets/neurons.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    display: block;
+    padding-bottom: 2%;
+}
+
+.main-about h1 {
+    color: #0582CA;
+    font-family: 'GeorgiaBold';
+    font-size: 48px;
+    text-align: center;
+}
+
+.description-about {
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-cohysis {
+    font-family: 'GeorgiaRegular';
+    font-size: 20px;
+    width: 50%;
+    margin-left: 10%;
+}
+
+.document {
+    width: 15%;
+    height: 15%;
+    margin-right: 10%;
+    margin-top: -3%;
+}

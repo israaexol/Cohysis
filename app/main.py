@@ -36,8 +36,15 @@ app = FastAPI(
 )
 
 # Allow CORS for local debugging
-app.add_middleware(CORSMiddleware, allow_origins=["*"])
+origins = ["*"]
 
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 # Mount static folder, like demo pages, if any
 app.mount("/static", StaticFiles(directory="static/"), name="static")
 
@@ -71,7 +78,7 @@ async def startup_event():
     }
 
 
-@app.post('/api/v1/predict',
+@app.post('/evaluate',
           response_model=InferenceResponse,
           responses={422: {"model": ErrorResponse},
                      500: {"model": ErrorResponse}}

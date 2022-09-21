@@ -1,5 +1,5 @@
 ARG IMAGE_NAME
-FROM ${IMAGE_NAME}:11.7.1-runtime-ubuntu20.04 as base
+FROM nvidia/cuda:11.7.1-runtime-ubuntu20.04 as base
 
 FROM base as base-amd64
 

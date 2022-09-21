@@ -11,20 +11,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      {/* <Router>
-        <Routes>
-            <Route path='/' element={<Intro/>}/>
-
-            <Route exact path='/#tools' element={<Evaluation/>}/>
-            
-            <Route path='/#about' element={<About/>}/>
-
-            <Route path='/#contact' element={<Contact/>}/>
-
-            <Route path='/gestionmodeles' element={<ListeModele/>}/>
-        </Routes>
-      </Router> */}
-      <Intro></Intro>
+      <Intro/>
       <Evaluation/>
       <About></About>
       <Contact></Contact>
